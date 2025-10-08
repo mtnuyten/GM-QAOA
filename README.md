@@ -1,2 +1,2 @@
-# Provable avoidance of barren plateaus for the Quantum Approximate Optimization Algorithm with Grover mixers
+# Variance of the GM-QAOA loss function for the MaxCut problem
 This code was used as an inspiration for the numerical simulations in https://arxiv.org/abs/2509.10424
