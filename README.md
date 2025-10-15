@@ -1,6 +1,6 @@
 # Variance of the GM-QAOA loss function for the MaxCut problem
 
-This code was used for the numerical simulations found in [arXiv](https://arxiv.org/abs/2509.10424).
+This code was used for the numerical simulations found in [arXiv:2509.10424](https://arxiv.org/abs/2509.10424).
 
 The authors derive an explicit formula for the loss function variance and prove that for broad optimization problems (including MaxCut, SAT, TSP), GM-QAOA avoids barren plateaus for sufficiently deep circuits by establishing an inverse-polynomial lower bound on the variance. The goal of this project was to simulate the QAOA circuit with Grover mixer for the MaxCut problem and provide evidence of the variance of the loss function stays above this analytical lower bound. 
 
