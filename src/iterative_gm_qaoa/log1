@@ -1,0 +1,19 @@
+Layer  | Energy     | Exp. Cut   | Ratio (%) 
+---------------------------------------------
+1      | -3.2186    | 9.1093     | 70.07     %
+2      | -5.0158    | 10.0079    | 76.98     %
+3      | -7.1757    | 11.0878    | 85.29     %
+4      | -8.2619    | 11.6309    | 89.47     %
+5      | -9.4165    | 12.2082    | 93.91     %
+6      | -10.4944   | 12.7472    | 98.06     %
+7      | -10.7853   | 12.8926    | 99.17     %
+8      | -10.8035   | 12.9018    | 99.24     %
+9      | -10.8312   | 12.9156    | 99.35     %
+10     | -10.8342   | 12.9171    | 99.36     %
+---------------------------------------------
+Final Approximation Ratio: 0.9936
+Final runtime: 4.936521306249778min
+# Executed 'iterative_gm_qaoa' on 5/4/2026
+# Fixed number of iterations (10)
+# with layer-wise optimization of (gamma, beta) parameters.
+# Graph is a random 3-regular graph with 10 nodes.

@@ -1,3 +1,12 @@
+"""
+Iterative GM-QAOA for Max Cut on Random Regular Graphs
+- Graph: Random 3-regular graph with 10 nodes
+- Cost Hamiltonian: H_C = sum(ZiZj) for edges (i,j)
+- Grover Mixer: U * (I - (1-e^-ib)|0><0|) * U_dag, where U prepares the current state
+- Optimization: Layer-wise COBYQA for (gamma, beta), progressively adding parameters reflecting the current state
+- Performance: Approximation ratio and runtime tracking
+"""
+
 import numpy as np
 import networkx as nx
 from qiskit import QuantumCircuit
@@ -73,7 +82,7 @@ for p in range(1, p_total + 1):
         return estimator.run([pub]).result()[0].data.evs
 
     # Layer-wise optimization
-    res = minimize(objective, [0.71, 0.39], method='COBYQA')
+    res = minimize(objective, [0.1, 0.1], method='COBYQA')
     
     # --- Calculate Ratio ---
     # Expected Cut = 0.5 * (num_edges - <H_C>)
